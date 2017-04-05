@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/jje/git/tabtight/resources'
+let g:netrw_dirhist_2='/home/jje/git/tabtight/vendor/laravel/framework/src/Illuminate/Foundation/Auth/Access'
+let g:netrw_dirhist_3='/home/jje/git/tabtight/resources/views/subscriptions'
+let g:netrw_dirhist_4='/home/jje'
+let g:netrw_dirhist_5='/home/jje/git'
+let g:netrw_dirhist_6='/home/jje'
