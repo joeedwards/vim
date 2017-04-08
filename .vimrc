@@ -5,7 +5,7 @@ so ~/.vim/plugins.vim
 syntax enable
 set backspace=indent,eol,start                                          "Make backspace behave like every other editor.
 let mapleader = ',' 						    	"The default is \, but a comma is much better.
-set number								"Let's activate line numbers.
+set nonumber								"Let's activate line numbers.
 "set autowriteall                                                        "Automatically write the file when switching buffers.
 set complete=.,w,b,u 							"Set our desired autocompletion matching.
 set tabstop=8
@@ -83,19 +83,19 @@ nmap <Leader>f :tag<space>
 "/
 "/ CtrlP
 "/
-let g:ctrlp_custom_ignore = 'node_modules\DS_Store\|git'
-let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
+"let g:ctrlp_custom_ignore = 'node_modules\DS_Store\|git'
+"let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
 
-nmap <D-p> :CtrlP<cr>
-nmap <D-r> :CtrlPBufTag<cr>
-nmap <D-e> :CtrlPMRUFiles<cr>
+"nmap <Leader><D-p> :CtrlP<cr>
+"nmap <Leader><D-r> :CtrlPBufTag<cr>
+"nmap <Leader><D-e> :CtrlPMRUFiles<cr>
 
 "/
 "/ NERDTree
 "/
 let NERDTreeHijackNetrw = 0
 
-nmap <D-1> :NERDTreeToggle<cr>
+nmap <Leader>1 :NERDTreeToggle<cr>
 
 "/
 "/ Greplace.vim
@@ -141,10 +141,10 @@ nnoremap <silent><leader>pf :call PhpCsFixerFixFile()<CR>
 "-------------Auto-Commands--------------"
 "Automatically source the Vimrc file on save.
 
-"augroup autosourcing
-"	autocmd!
-"	autocmd BufWritePost .vimrc source %
-"augroup END
+augroup autosourcing
+	autocmd!
+	autocmd BufWritePost .vimrc source %
+augroup END
 
 
 
